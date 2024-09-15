@@ -8,13 +8,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     font-family: 'Patrick Hand', cursive;
     background-color: #f0f8ff;
+    text-align: center;
 }
 
 .container {
-    text-align: center;
+    max-width: 100%;
+    padding: 20px;
 }
 
 #input-container {
@@ -24,6 +26,7 @@ body {
 input {
     padding: 10px;
     font-size: 16px;
+    max-width: 100%;
 }
 
 button {
@@ -49,15 +52,15 @@ button:hover {
     margin-bottom: 20px;
     animation: fadeIn 2s ease;
     font-family: 'Patrick Hand', cursive;  /* 可爱的手写字体 */
+    word-wrap: break-word;
 }
 
-/* 动画容器 */
 .animation-container {
     position: relative;
     width: 100%;
-    height: 300px;
+    height: auto;
     display: flex;
-    justify-content: space-between;  /* 分开维尼熊和气球 */
+    justify-content: space-between;
     align-items: center;
     margin-top: 20px;
 }
@@ -119,9 +122,12 @@ button:hover {
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
+}
+
+/* 图片轮播样式 */
 .slideshow {
-    width: 300px;
-    height: 200px;
+    width: 80%;
+    height: auto;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
@@ -129,6 +135,6 @@ button:hover {
 
 .slideshow img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
 }
