@@ -5,8 +5,8 @@ document.getElementById('nameForm').addEventListener('submit', function(e) {
     const userName = document.getElementById('userName').value.trim();
     const errorMessage = document.getElementById('error-message');
 
-    // 检查用户名是否为 "沈炜奕"
-    if (userName === "沈炜奕") {
+    // 检查用户名是否为 "swy"
+    if (userName === "swy") {
         errorMessage.style.display = 'none';
 
         // 隐藏输入表单，显示动画和祝福
