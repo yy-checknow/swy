@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Make Every Day Count</title>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 初始输入界面 -->
+        <div id="input-container">
+            <h1>请输入你的姓名：</h1>
+            <form id="nameForm">
+                <input type="text" id="userName" placeholder="姓名" autocomplete="name" required>
+                <button type="submit" id="submitBtn">提交</button>
+            </form>
+        </div>
+
+        <!-- 动画展示界面 -->
+        <div id="greeting-container" style="display: none;">
+            <h1 id="birthdayMessage">To Make Every Day Count</h1>
+            <!-- 图片轮播区 -->
+            <div class="slideshow">
+                <img id="slideshow-img" src="photo1.jpg" alt="轮播图片">
+            </div>
+            <div class="animation-container">
+                <!-- 左侧维尼熊 -->
+                <div class="left-side">
+                    <img id="winnie" src="winnie.png" alt="维尼熊">
+                </div>
+                <!-- 右侧气球 -->
+                <div class="right-side">
+                    <div class="balloons">
+                        <div class="balloon"></div>
+                        <div class="balloon"></div>
+                        <div class="balloon"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 背景音乐 -->
+    <audio id="background-music" autoplay loop>
+        <source src="buddhbai.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

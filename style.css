@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Patrick Hand', cursive;
+    background-color: #f0f8ff;
+}
+
+.container {
+    text-align: center;
+}
+
+#input-container {
+    padding: 20px;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff69b4;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff1493;
+}
+
+#greeting-container {
+    padding: 20px;
+}
+
+#birthdayMessage {
+    font-size: 48px;  /* 更大的字体 */
+    color: #ff1493;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease;
+    font-family: 'Patrick Hand', cursive;  /* 可爱的手写字体 */
+}
+
+/* 动画容器 */
+.animation-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;  /* 分开维尼熊和气球 */
+    align-items: center;
+    margin-top: 20px;
+}
+
+.left-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.right-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+#winnie {
+    width: 150px;
+    animation: floatWinnie 6s ease-in-out infinite;
+}
+
+.balloons {
+    display: flex;
+    justify-content: center;
+}
+
+.balloon {
+    width: 50px;
+    height: 80px;
+    background-color: #ff69b4;
+    border-radius: 50% 50% 45% 45%;
+    margin: 0 15px;
+    position: relative;
+    animation: float 4s ease-in-out infinite;
+}
+
+.balloon:before {
+    content: '';
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    width: 2px;
+    height: 50px;
+    background-color: #999;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes floatWinnie {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+.slideshow {
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.slideshow img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
